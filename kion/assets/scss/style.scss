@@ -20,11 +20,28 @@
         font-size: 2.5rem;
     }
 }
+
+.section{
+    &-inner{
+        position: relative;
+        z-index: 100;
+    }
+}
 .bg{
     &-green{
+        position: relative;
         background: #84D2C9;
     }
+    &-salmon{
+        position: relative;
+        background: #EEB2A0;
+    }
     &-clipper{
+        position: absolute;
+        top: 0;
+        z-index: 99;
+        width: 100%;
+        height: 100vh;
         background: rgba(255, 255, 255, 0.16);
         -webkit-clip-path: polygon(50% 0, 100% 0, 100% 100%, 0% 100%);
         clip-path: polygon(50% 0, 100% 0, 100% 100%, 0% 100%);
@@ -56,4 +73,11 @@
 }
 .vh-100{
     height: 100vh;
+}
+.circle-image-wrapper{
+    width: 30rem;
+    display: flex;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 30rem;
 }
