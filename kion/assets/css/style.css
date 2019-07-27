@@ -188,4 +188,33 @@
 .offer-desc h5 {
   font-size: 2rem; }
 
+.choice-image {
+  width: 75%; }
+.choice-text {
+  font-size: 1.5rem; }
+
+.vh-75 {
+  height: 75vh; }
+
+.flex-grow-1 {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
+.testi {
+  background-color: red;
+  background: url("../images/testi-bg.jpg");
+  background-size: cover;
+  background-position: center; }
+  .testi-image {
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem; }
+  .testi-name {
+    font-weight: bold; }
+  .testi-testimonial {
+    width: 75%; }
+
 /*# sourceMappingURL=style.css.map */
