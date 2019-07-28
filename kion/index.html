@@ -6,37 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <section class="container-fluid mainvs">
         <div class="row">
-            <div class="col-12 vh-100 d-flex justify-content-center align-items-center">
+            <div class="col-12 min-vh-100 d-flex justify-content-center align-items-center">
                 <div class="mainvs-caption-outer">
                     <div class="mainvs-caption-inner">
                         <div class="container-fluid h-100">
                             <div class="row h-100">
-                                <div class="col-md-6 mainvs-image">
+                                <div class="col-12 col-lg-6 mainvs-image">
                                     <img src="./assets/images/k-link-logo.png" class="img-fluid mainvs-logo" alt="">
                                     <img src="./assets/images/k-ion-all.png" class="img-fluid mainvs-product" alt="">
                                 </div>
-                                <div class="col-md-6 text-center d-flex flex-column justify-content-center">
+                                <div class="col-12 col-lg-6 text-center d-flex flex-column justify-content-center">
                                     <div class="">
                                         <img src="./assets/images/k-ionlogo.png" class="mainvs-logoproduct img-fluid" alt="">
                                     </div>
                                     <div class="mainvs-caption-title">
                                         Lindungi <strong>Mata</strong> Anda
                                     </div>
-                                    <div class="mainvs-caption-subtitle my-3">
+                                    <div class="mainvs-caption-subtitle my-3 font-red">
                                         Dengan berbagai manfaat dari Anion
                                         dan Far Infrared Rays
                                     </div>
                                     <div class="row my-3">
                                         <div class="col-md-6">
-                                            <a href="#" class="btn btn-rounded btn-main">Pesan Sekarang!</a>
+                                            <a href="#" class="btn btn-rounded btn-main mt-3 mt-md-0">Pesan Sekarang!</a>
                                         </div>
                                         <div class="col-md-6">
-                                            <a href="#" class="btn btn-rounded btn-purple">Pelajari Lebih Lanjut</a>
+                                            <a href="#" class="btn btn-rounded btn-purple mt-3 mt-md-0">Pelajari Lebih Lanjut</a>
                                         </div>
                                     </div>
                                 </div>
@@ -47,13 +49,15 @@
             </div>
         </div>
     </section>
-    <section class="bg-green">
-        <div class="container-fluid vh-100 section-inner">
-            <div class="row vh-100 align-items-center">
-                <div class="col-md-3 offset-md-2">
-
+    <section class="bg-lightgreen">
+        <div class="container-fluid min-vh-100 section-inner">
+            <div class="row min-vh-100 align-items-center">
+                <div class="col-6 col-lg-3 offset-lg-2">
+                    <div class="polaroid">
+                        <img src="./assets/images/jieun.jpg" class="img-fluid" alt="">
+                    </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-6 col-lg-3 font-white">
                     <h3>
                         Teknologi terbaru dari 
                         Kaca Mata K-ion Nano 
@@ -72,27 +76,118 @@
         </div>
     </section>
     <section class="bg-salmon">
-        <div class="container-fluid vh-100 section-inner">
-            <div class="row vh-100">
-                <div class="section-title col-12 text-center my-5">
+        <div class="container-fluid min-vh-100 section-inner">
+            <div class="row">
+                <div class="section-title col-12 col-lg-9 mx-auto text-center my-5">
                     <h2>
                         K-ion Nano Premium 5 dilengkapi dengan banyak manfaat yang akan selalu
                         melindungi mata anda
                     </h2>
                 </div>
-                <div class="col-12 col-md-4 offset-md-4 section-content">
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-4 offset-lg-4 section-content">
                     <div class="circle-caption-wrapper">
-                        <div class="circle-image-wrapper justify-content-center">
-                            <img src="https://picsum.photos/500" class="rounded-circle img-fluid" alt="Cinque Terre">
+                        <div class="circle-image-wrapper justify-content-center" style="background-image: url('./assets/images/jieun.jpg')">
+                    </div>
+                    <div class="circle-text-wrapper d-none d-lg-flex align-items-center flex-row top-right">
+                        <div class="circle-caption-image">
+                            <img src="./assets/images/antiblueray.png" class="img-fluid" alt="">
                         </div>
-                        <div class="circle-text-wrapper top-right">
-                            lipsum
+                        <div class="circle-caption-text text-left">
+                            <div class="circle-caption-title">
+                                ANTI BLUE RAY
+                            </div>
+                            <div class="circle-caption-desc">
+                                    Dapat menyerap dan memantulkan Sinar Biru
+                                    yang dapat merusak mata anda. 
+                                    Cocok untuk menemani saat anda 
+                                    berhadapan dengan layar komputer.
+                            </div>
                         </div>
-                        <div class="circle-text-wrapper bottom-right">
-                            ipsum
+                    </div>
+                    <div class="circle-text-wrapper d-none d-lg-flex align-items-center flex-row bottom-right">
+                        <div class="circle-caption-image">
+                            <img src="./assets/images/antiuv.png" class="img-fluid" alt="">
                         </div>
-                        <div class="circle-text-wrapper middle-left">
-                            dolor
+                        <div class="circle-caption-text">
+                            <div class="circle-caption-title">
+                                ANTI FOG
+                            </div>
+                            <div class="circle-caption-desc">
+                                    Anda juga tidak perlu khawatir dengan uap, 
+                                    karena Lensa K-ion Nano Premium 5
+                                    sudah dilengkapi dengan Anti kabut
+                                    sehingga mencegah kacamata tidak beruap
+                                    dan kabut dalam semua kondisi.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="circle-text-wrapper d-none d-lg-flex align-items-center flex-row-reverse middle-left">
+                        <div class="circle-caption-image">
+                            <img src="./assets/images/antifog.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="circle-caption-text text-right">
+                            <div class="circle-caption-title">
+                                ANTI UV
+                            </div>
+                            <div class="circle-caption-desc">
+                                    Melindungi mata anda dari 
+                                    Sinar Ultra Violet yang terik, 
+                                    sehingga tetap nyaman
+                                    dikenakan di outdoor.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 d-flex d-lg-none flex-column">
+                    <div class="d-flex align-items-center flex-column mt-5">
+                        <div class="circle-caption-image">
+                            <img src="./assets/images/antiblueray.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="circle-caption-text text-center">
+                            <div class="circle-caption-title">
+                                ANTI BLUE RAY
+                            </div>
+                            <div class="circle-caption-desc">
+                                    Dapat menyerap dan memantulkan Sinar Biru
+                                    yang dapat merusak mata anda. 
+                                    Cocok untuk menemani saat anda 
+                                    berhadapan dengan layar komputer.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center flex-column mt-5">
+                        <div class="circle-caption-image">
+                            <img src="./assets/images/antiuv.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="circle-caption-text text-center">
+                            <div class="circle-caption-title">
+                                ANTI FOG
+                            </div>
+                            <div class="circle-caption-desc">
+                                    Anda juga tidak perlu khawatir dengan uap, 
+                                    karena Lensa K-ion Nano Premium 5
+                                    sudah dilengkapi dengan Anti kabut
+                                    sehingga mencegah kacamata tidak beruap
+                                    dan kabut dalam semua kondisi.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center flex-column my-5">
+                        <div class="circle-caption-image">
+                            <img src="./assets/images/antifog.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="circle-caption-text text-center">
+                            <div class="circle-caption-title">
+                                ANTI UV
+                            </div>
+                            <div class="circle-caption-desc">
+                                    Melindungi mata anda dari 
+                                    Sinar Ultra Violet yang terik, 
+                                    sehingga tetap nyaman
+                                    dikenakan di outdoor.
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -100,16 +195,16 @@
         </div>
     </section>
     <section class="bg-indigo pb-5">
-        <div class="container-fluid vh-75 section-inner">
+        <div class="container-fluid min-vh-75 section-inner">
             <div class="row">
                 <div class="section-title col-12 text-center my-5">
                     <h2>
-                        K-ion 
+                        Info Material
                     </h2>
                 </div>
             </div>
             <div class="row px-5">
-                <div class="col-md-3">
+                <div class="col-12 col-md-6 col-lg-3 pb-3 pb-md-0">
                     <div class="ccard ccard-blue">
                         <div class="ccard-content">
                             <div class="ccard-image p-3">
@@ -125,7 +220,7 @@
                             sehingga tak mudah patah
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-12 col-md-6 col-lg-3 pb-3 pb-md-0">
                     <div class="ccard ccard-indigo">
                         <div class="ccard-content">
                             <div class="ccard-image p-3">
@@ -142,7 +237,7 @@
                             sehingga melepaskan stress pada mata.
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-12 col-md-6 col-lg-3 pb-3 pb-md-0">
                     <div class="ccard ccard-salmon">
                         <div class="ccard-content">
                             <div class="ccard-image p-3">
@@ -159,7 +254,7 @@
                         mengurangi efek mata panda.
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-12 col-md-6 col-lg-3 pb-3 pb-md-0">
                     <div class="ccard ccard-darkblue">
                         <div class="ccard-content">
                             <div class="ccard-image p-3">
@@ -179,15 +274,83 @@
             </div>
         </div>
     </section>
+    <section class="bg-green pb-5 benefits">
+            <div class="container-fluid section-inner">
+                <div class="row">
+                    <div class="section-title col-12 text-center my-5">
+                        <h2>
+                            Manfaat K-ion Nano
+                        </h2>
+                    </div>
+                </div>
+                <div class="row px-5">
+                    <div class="col-12 col-lg-6 benefit-each d-flex flex-lg-row-reverse flex-column align-items-center">
+                        <div class="benefit-image">
+                            <img src="./assets/images/bendaasing.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="benefit-desc text-lg-right text-center">
+                            Melindungi mata dari paparan benda asing yang
+                            mengakibatkan mata kering dan mudah lelah
+                            saat beraktifitas didalam maupun diluar ruangan.
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 benefit-each d-flex flex-column flex-lg-row align-items-center">
+                        <div class="benefit-image">
+                            <img src="./assets/images/kacamata.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="benefit-desc text-center text-lg-left">
+                                Membantu meringankan gangguan mata seperti rabun
+                                dekat, rabun jauh, dan silindris
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 benefit-each d-flex flex-lg-row-reverse flex-column align-items-center">
+                        <div class="benefit-image">
+                            <img src="./assets/images/radiasi.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="benefit-desc text-lg-right text-center">
+                                Dapat mengurangi efek radiasi dan mata lelah saat
+                                menggunakan gadget seperti HP, Laptop, Komputer,
+                                tablet, dan lainnya.
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 benefit-each d-flex flex-column flex-lg-row align-items-center">
+                        <div class="benefit-image">
+                            <img src="./assets/images/darah.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="benefit-desc text-center text-lg-left">
+                                Melancarkan aliran darah sekitar mata dan peningkatan
+                                metabolisme serta mengurangi resiko pada gejala diabetic
+                                retinopathy, glucoma, katarak, dan AMD.
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 benefit-each d-flex flex-lg-row-reverse flex-column align-items-center">
+                        <div class="benefit-image">
+                            <img src="./assets/images/mata.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="benefit-desc text-lg-right text-center">
+                                Merawat dan menjaga kesehatan mata dengan baik
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 benefit-each d-flex flex-column flex-lg-row align-items-center">
+                        <div class="benefit-image">
+                            <img src="./assets/images/infeksi.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="benefit-desc text-center text-lg-left">
+                                Membantu proses pemulihan infeksi ringan pada mata.
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+    </section>
     <section class="bg-white pb-5">
         <div class="container-fluid section-inner">
             <div class="row">
-                <div class="section-title col-12 text-center my-2">
+                <div class="section-title col-12 text-center mt-5 mb-1">
                     <h2>
                         Pilihan Warna
                     </h2>
                 </div>
-                <div class="section-desc col-md-6 offset-md-3 text-center my-3">
+                <div class="section-desc col-12 col-md-6 offset-md-3 text-center mt-1 mb-3">
                     <p>
                         Hadir dengan desain yang menarik dan trendi. Kacamata ini juga tersedia dalam
                         beberapa K-varian warna, antara lain hitam - hitam, ungu - hitam dan pink - hitam. 
@@ -196,7 +359,7 @@
                 </div>
             </div>
             <div class="row choices">
-                <div class="col-4 choice d-flex align-items-center flex-column">
+                <div class="col-12 col-lg-4 choice d-flex align-items-center flex-column mb-3 mb-lg-0">
                     <div class="choice-image">
                         <img src="./assets/images/k-ion-purple-black.png" class="img-fluid" alt="">
                     </div>
@@ -205,7 +368,7 @@
                     </div>
                     
                 </div>
-                <div class="col-4 offset-4 choice d-flex align-items-center flex-column">
+                <div class="col-12 col-lg-4 offset-lg-4 choice d-flex align-items-center flex-column mb-3 mb-lg-0">
                     <div class="choice-image">
                         <img src="./assets/images/k-ion-pink-black.png" class="img-fluid" alt="">
                     </div>
@@ -216,7 +379,7 @@
                 </div>
             </div>
             <div class="row choices">
-                <div class="col-4 offset-4 choice d-flex align-items-center flex-column-reverse">
+                <div class="col-12 col-lg-4 offset-lg-4 choice d-flex align-items-center flex-column flex-column-lg-reverse mb-3 mb-lg-0">
                     <div class="choice-image">
                         <img src="./assets/images/k-ion-black-black.png" class="img-fluid" alt="">
                     </div>
@@ -229,38 +392,53 @@
         </div>
     </section>
     <section class="testi">
-        <div class="container-fluid section-inner d-flex flex-column vh-100">
-            <div class="row text-center">
+        <div class="container-fluid section-inner d-flex flex-column">
+            <div class="row text-center my-5">
                 <div class="section-title col-12 text-center">
                     <h2>
                         Apa kata mereka
                     </h2>
                 </div>
             </div>
-            <ul class="row align-items-center text-center list-unstyled flex-grow-1">
-                <li class="col-12">
-                    <div class="testi-each d-flex justify-content-center flex-column align-items-center">
-                        <div class="testi-image" style="background-image: url('./assets/images/jieun.jpg')">
+            <div class="align-items-center text-center list-unstyled flex-grow-1">
+                <ul class="list-unstyled"  id="testimonial">
+                    <li class="col-12">
+                        <div class="testi-each d-flex justify-content-center flex-column align-items-center">
+                            <div class="testi-image" style="background-image: url('./assets/images/jieun.jpg')">
+                            </div>
+                            <div class="testi-name font-bold my-3">
+                                John Doe
+                            </div>
+                            <div class="testi-testimonial text-center">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan sagittis
+                                    metus. In ut tortor et felis convallis consectetur sit amet non tortor. Etiam non nibh
+                            </div>
                         </div>
-                        <div class="testi-name font-bold my-3">
-                            John Doe
+                    </li>
+                    <li class="col-12">
+                        <div class="testi-each d-flex justify-content-center flex-column align-items-center">
+                            <div class="testi-image" style="background-image: url('./assets/images/jieun.jpg')">
+                            </div>
+                            <div class="testi-name font-bold my-3">
+                                John Doe
+                            </div>
+                            <div class="testi-testimonial text-center">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan sagittis
+                                    metus. In ut tortor et felis convallis consectetur sit amet non tortor. Etiam non nibh
+                            </div>
                         </div>
-                        <div class="testi-testimonial text-center">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan sagittis
-                                metus. In ut tortor et felis convallis consectetur sit amet non tortor. Etiam non nibh
-                        </div>
-                    </div>
-                </li>
-            </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
-    <section class="bg-pink offer">
-        <div class="container-fluid vh-100 section-inner">
-            <div class="row align-items-center vh-100">
-                <div class="col-12 col-md-6 text-center my-5 offer-product">
+    <section class="bg-pink offer pb-5">
+        <div class="container-fluid min-vh-100 section-inner">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-12 col-lg-6 text-center my-5 offer-product">
                     <img src="./assets/images/k-ion-nano-premium-5.png" class="img-fluid" alt="">
                 </div>
-                <div class="col-12 col-md-6 text-center">
+                <div class="col-12 col-lg-6 text-center">
                     <div class="offer-title">
                         <h2>
                             Tunggu Apa Lagi?
@@ -282,6 +460,21 @@
                 </div>
             </div>
     </section>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script><script src="assets/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('#testimonial').slick({
+            prevArrow: '<a class="slick-prev btn"><i class="fa fa-long-arrow-left"></i></a>',
+nextArrow: '<a class="slick-next btn"><i class="fa fa-long-arrow-right"></i></a>',
+
+
+        });
+        });
+    </script>
 </body>
-<script src="assets/dist/js/bootstrap.min.js"></script>
+
 </html>

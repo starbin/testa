@@ -1,10 +1,14 @@
+@media screen and (max-width: 600px) {
+  html, body {
+    font-size: .9rem; } }
+
 .mainvs {
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, #fff), color-stop(50%, #C38AB5));
   background: linear-gradient(to right, #fff 50%, #C38AB5 50%); }
   .mainvs-caption-outer {
-    width: 75%;
+    width: 86%;
+    height: 98%;
     background: #EA95BA;
-    height: 75%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -16,6 +20,10 @@
             align-items: center;
     -webkit-box-shadow: 8px 8px 6px 0px rgba(0, 0, 0, 0.16);
             box-shadow: 8px 8px 6px 0px rgba(0, 0, 0, 0.16); }
+    @media screen and (min-width: 768px) {
+      .mainvs-caption-outer {
+        width: 75%;
+        height: 75%; } }
   .mainvs-caption-inner {
     background: #fff;
     height: 90%;
@@ -58,7 +66,12 @@
   .section-desc p {
     color: #D3B5E0; }
 
-.bg-green {
+.font-white {
+  color: #fff; }
+.font-red {
+  color: #DC3A45; }
+
+.bg-lightgreen {
   position: relative;
   background: #84D2C9; }
 .bg-salmon {
@@ -70,6 +83,9 @@
 .bg-pink {
   position: relative;
   background-color: #EFBFCA; }
+.bg-green {
+  position: relative;
+  background-color: #BFD9AE; }
 .bg-clipper {
   position: absolute;
   top: 0;
@@ -109,24 +125,44 @@
   height: 100vh; }
 
 .circle-image-wrapper {
-  position: relative;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 50%;
-  height: 100%; }
+  height: 0;
+  padding-bottom: 50%;
+  position: relative;
+  width: 50%;
+  margin: 0 auto; }
+  @media screen and (min-width: 992px) {
+    .circle-image-wrapper {
+      padding-bottom: 100%;
+      width: 100%; } }
 .circle-text-wrapper {
-  position: absolute; }
+  color: #fff;
+  position: absolute;
+  width: 100%; }
   .circle-text-wrapper.top-right {
     top: 10%;
-    right: 5%; }
+    left: 76%; }
   .circle-text-wrapper.bottom-right {
     bottom: 22%;
-    right: 5%; }
+    left: 82%; }
   .circle-text-wrapper.middle-left {
     top: 40%;
-    left: 0%; }
+    right: 84%; }
+.circle-caption-text {
+  width: 75%; }
+.circle-caption-image {
+  width: 25%; }
+  .circle-caption-image img {
+    margin: 0 auto;
+    display: block; }
+
+.polaroid {
+  background: #fff;
+  padding: 1rem;
+  padding-bottom: 4rem; }
 
 .ccard {
   background-color: salmon;
@@ -154,8 +190,14 @@
   .ccard-title {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.2rem;
     text-align: center; }
+    @media screen and (min-width: 768px) {
+      .ccard-title {
+        font-size: 1.7rem; } }
+    @media screen and (min-width: 992px) {
+      .ccard-title {
+        font-size: 2rem; } }
   .ccard-blue {
     background: #43b0f0;
     background: -webkit-gradient(linear, left bottom, left top, from(#43b0f0), to(#5fdad1));
@@ -188,13 +230,32 @@
 .offer-desc h5 {
   font-size: 2rem; }
 
+.benefit-image {
+  width: 50%; }
+  .benefit-image img {
+    display: block;
+    margin: 0 auto; }
+  @media screen and (min-width: 600px) {
+    .benefit-image {
+      width: 12%; } }
+.benefit-desc {
+  width: 75%; }
+.benefit-each {
+  margin-top: 1rem; }
+  @media screen and (min-width: 600px) {
+    .benefit-each {
+      margin-top: 3rem; } }
+
 .choice-image {
   width: 75%; }
 .choice-text {
   font-size: 1.5rem; }
 
-.vh-75 {
-  height: 75vh; }
+.min-vh-75 {
+  min-height: 75vh; }
+
+.min-vh-100 {
+  min-height: 100vh; }
 
 .flex-grow-1 {
   -webkit-box-flex: 1;
@@ -203,18 +264,34 @@
 
 .testi {
   background-color: red;
-  background: url("../images/testi-bg.jpg");
+  background: url("../images/testi-bg.png");
   background-size: cover;
   background-position: center; }
+  .testi-each {
+    margin-top: 5rem;
+    margin-bottom: 8rem; }
   .testi-image {
     background-size: cover;
     background-position: center;
     border-radius: 50%;
-    width: 5rem;
-    height: 5rem; }
+    width: 12rem;
+    height: 12rem; }
   .testi-name {
     font-weight: bold; }
   .testi-testimonial {
-    width: 75%; }
+    width: 75%;
+    font-size: 1.2rem; }
+
+.slick-prev {
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+  font-size: 3.5rem; }
+
+.slick-next {
+  position: absolute;
+  right: 0;
+  bottom: 50%;
+  font-size: 3.5rem; }
 
 /*# sourceMappingURL=style.css.map */
