@@ -1,8 +1,16 @@
+
+
 html, body{
+    font-family: 'Montserrat', sans-serif;
     @media screen and (max-width: 600px){
         font-size: .9rem;
     }
 }
+
+@font-face {
+    font-family: smiley;
+    src: url(../fonts/smiley.otf);
+  }
 
 .mainvs{
     background: linear-gradient(to right, #fff 50%, #C38AB5 50%);
@@ -179,6 +187,10 @@ html, body{
     &-caption-text{
         width: 75%;
     }
+    &-caption-title{
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
     &-caption-image{
         width: 25%;
         img{
@@ -212,7 +224,7 @@ html, body{
     &-image{
         text-align: center;
         img{
-            width: 77%;
+            width: 64%;
             @media screen and (min-width: 768px){
                 width: 100%;
             }
@@ -252,6 +264,13 @@ html, body{
         width: 80%;
         margin: 0 auto;
         padding-top: 1rem;
+    }
+}
+
+.material{
+    &-list{
+        margin-bottom: 9rem;
+        margin-top: 5rem;
     }
 }
 
@@ -350,6 +369,7 @@ html, body{
 
 .slick-prev {
     position: absolute;
+    z-index: 2;
     left: 0;
     bottom: 50%;
     font-size: 3.5rem;
@@ -357,7 +377,73 @@ html, body{
 
 .slick-next{
     position: absolute;
+    z-index: 2;
     right: 0;
     bottom: 50%;
     font-size: 3.5rem;
+}
+.bubble{
+    &-right{
+        position: absolute;
+        right: 0;
+        top: 0;
+        img{
+            max-width: 200px;
+        }
+    }
+    &-left{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        img{
+            max-width: 200px;
+        }
+    }    
+}
+
+.word{
+    &-left{
+        position: absolute;
+        left: 0;
+        top: 15%;
+        font-size: 170px;
+        font-family: smiley;
+        color: rgba(219, 219, 219, 0.50);
+        text-shadow: 5px 3px 2px rgba(255,255,255,0.40);
+    }
+    &-right{
+        position: absolute;
+        right: 0;
+        top: 44%;
+        font-size: 170px;
+        font-family: smiley;
+        color: rgba(219, 219, 219, 0.28);
+        text-shadow: 5px 3px 2px rgba(255,255,255,0.40);
+    }
+}
+
+.fa{
+    position: relative;
+    &.fa-long-arrow-right{
+        &:after{
+            content: '';
+            position: absolute;
+            right: -15%;
+            z-index: -1;
+            background: #E37046;
+            width: 1.8rem;
+            height: 100%;        
+        }
+    }
+    &.fa-long-arrow-left{
+        &:after{
+            content: '';
+            position: absolute;
+            left: -15%;
+            z-index: -1;
+            background: #E37046;
+            width: 1.8rem;
+            height: 100%;        
+        }
+    }
 }
