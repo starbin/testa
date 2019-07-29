@@ -199,6 +199,9 @@ html, body {
     text-align: center; }
     .ccard-image img {
       width: 64%; }
+      @media screen and (min-width: 375px) {
+        .ccard-image img {
+          width: 85%; } }
       @media screen and (min-width: 768px) {
         .ccard-image img {
           width: 100%; } }
