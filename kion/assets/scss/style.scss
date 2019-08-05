@@ -13,10 +13,11 @@ html, body{
   }
 
 .mainvs{
+    
     background: linear-gradient(to right, #fff 50%, #C38AB5 50%);
     &-caption-outer{
-        width: 86%;
-        height: 98%;
+        width: 100%;
+        height: 100%;
         background: #EA95BA;
         display: flex;
         justify-content: center;
@@ -42,8 +43,11 @@ html, body{
         flex-direction: column;
         padding-top: 1rem;
         .mainvs-product{
-            width: 75%;
+            width: 100%;
             align-self: center;
+            @media screen and (min-width: 768px){
+                width: 75%;
+            }
         }
         .mainvs-logo{
             width: 6rem;
@@ -81,6 +85,9 @@ html, body{
     }
     &-red{
         color:#DC3A45;
+    }
+    &-black{
+        color: #232323;
     }
 }
 .bg{
