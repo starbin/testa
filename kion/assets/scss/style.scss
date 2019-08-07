@@ -169,6 +169,11 @@ html, body{
     height: 100vh;
 }
 .circle{
+    &-caption-wrapper{
+        @media screen and (min-width: 1024px) and (max-width: 1366px){
+            margin-top: 5rem;
+        }
+    }
     &-image-wrapper{
         background-position: center center;
         background-repeat: no-repeat;
