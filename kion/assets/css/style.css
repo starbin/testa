@@ -37,7 +37,10 @@ html, body {
             box-shadow: 8px 8px 6px 0px rgba(0, 0, 0, 0.16); }
   .mainvs-caption-title {
     color: #942792;
-    font-size: 2.5rem; }
+    font-size: 2rem; }
+    @media screen and (min-width: 768px) {
+      .mainvs-caption-title {
+        font-size: 2.5rem; } }
   .mainvs-image {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -55,9 +58,12 @@ html, body {
         .mainvs-image .mainvs-product {
           width: 75%; } }
     .mainvs-image .mainvs-logo {
-      width: 6rem;
+      width: 2rem;
       -ms-flex-item-align: start;
           align-self: flex-start; }
+      @media screen and (min-width: 768px) {
+        .mainvs-image .mainvs-logo {
+          width: 6rem; } }
   .mainvs .mainvs-logoproduct {
     width: 50%;
     margin-bottom: 1rem; }
@@ -142,7 +148,10 @@ html, body {
 
 @media screen and (min-width: 1024px) and (max-width: 1366px) {
   .circle-caption-wrapper {
-    margin-top: 5rem; } }
+    margin-top: 10rem; } }
+@media screen and (min-width: 1366px) {
+  .circle-caption-wrapper {
+    margin-top: 0; } }
 .circle-image-wrapper {
   background-position: center center;
   background-repeat: no-repeat;
