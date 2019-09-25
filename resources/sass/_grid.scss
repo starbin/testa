@@ -4,6 +4,8 @@ $grid__bp-lg: 992;
 $grid__bp-xl: 1200;
 $grid__cols: 12;
 $def__padding: 15;
+$spacing: .5;
+$spaces: 5;
 
 $map-grid-props: (
         '': 0,
@@ -21,6 +23,14 @@ $map-grid-props: (
       @content;
     }
   }
+}
+
+@mixin create-padding($modifier, $spaces, $breakpoint) {
+    @for $i from 1 through $spaces {
+      &#{$modifier}-#{$i} {
+        padding: ($i) *.5rem;
+      }
+    }
 }
 
 @mixin create-col-classes($modifier, $grid-cols, $breakpoint) {
@@ -78,4 +88,10 @@ $map-grid-props: (
     @each $modifier , $breakpoint in $map-grid-props {
     @include create-col-classes($modifier, $grid__cols, $breakpoint);
   }
+}
+
+.p{
+  @each $modifier , $breakpoint in $map-grid-props {
+  @include create-padding($modifier, $spaces, $breakpoint);
+}
 }
