@@ -1,0 +1,97 @@
+$spaces: 5;
+$space-props: (x, y, l, r, t, b);
+
+@mixin create-margin($modifier, $spaces, $breakpoint) {
+    @include create-mq($breakpoint, 'min') {
+      @for $i from 0 through $spaces {
+        @each $space-mods in $space-props{
+          @if($space-mods == 'x') {
+            &#{$space-mods}#{$modifier}-#{$i} {
+              margin-left: ($i) *.5rem;
+              margin-right: ($i) *.5rem;
+            }
+          }
+          @if($space-mods == 'y') {
+            &#{$space-mods}#{$modifier}-#{$i} {
+              margin-top: ($i) *.5rem;
+              margin-bottom: ($i) *.5rem;
+            }
+          }
+          @if($space-mods == 'l') {
+            &#{$space-mods}#{$modifier}-#{$i} {
+              margin-left: ($i) *.5rem;
+            }
+          }
+          @if($space-mods == 'r') {
+            &#{$space-mods}#{$modifier}-#{$i} {
+              margin-right: ($i) *.5rem;
+            }
+          }
+          @if($space-mods == 't') {
+            &#{$space-mods}#{$modifier}-#{$i} {
+              margin-top: ($i) *.5rem;
+            }
+          }
+          @if($space-mods == 'b') {
+            &#{$space-mods}#{$modifier}-#{$i} {
+              margin-bottom: ($i) *.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @mixin create-padding($modifier, $spaces, $breakpoint) {
+    @include create-mq($breakpoint, 'min') {
+      @for $i from 0 through $spaces {
+        @each $space-mods in $space-props{
+          @if($space-mods == 'x') {
+            &#{$space-mods}#{$modifier}-#{$i} {
+              padding-left: ($i) *.5rem;
+              padding-right: ($i) *.5rem;
+            }
+          }
+          @if($space-mods == 'y') {
+            &#{$space-mods}#{$modifier}-#{$i} {
+              padding-top: ($i) *.5rem;
+              padding-bottom: ($i) *.5rem;
+            }
+          }
+          @if($space-mods == 'l') {
+            &#{$space-mods}#{$modifier}-#{$i} {
+              padding-left: ($i) *.5rem;
+            }
+          }
+          @if($space-mods == 'r') {
+            &#{$space-mods}#{$modifier}-#{$i} {
+              padding-right: ($i) *.5rem;
+            }
+          }
+          @if($space-mods == 't') {
+            &#{$space-mods}#{$modifier}-#{$i} {
+              padding-top: ($i) *.5rem;
+            }
+          }
+          @if($space-mods == 'b') {
+            &#{$space-mods}#{$modifier}-#{$i} {
+              padding-bottom: ($i) *.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  
+.p{
+    @each $modifier , $breakpoint in $map-grid-props {
+    @include create-padding($modifier, $spaces, $breakpoint);
+  }
+}
+
+.m{
+  @each $modifier , $breakpoint in $map-grid-props {
+  @include create-margin($modifier, $spaces, $breakpoint);
+}
+}
