@@ -1,10 +1,44 @@
 $spaces: 5;
-$space-props: (x, y, l, r, t, b);
+$space-props: ('',x, y, l, r, t, b);
+
+$display-props: (flex, block, inline-block, inline-flex);
+
+$auto : (auto);
+
+@mixin create-display($modifier, $display-props, $breakpoint) {
+  @include create-mq($breakpoint, 'min') {
+    @each $display in $display-props{
+      &#{$modifier}-#{$display}{
+        display: ($display);
+      }
+    }
+  }
+}
+
+@mixin create-marginauto($modifier, $auto, $breakpoint) {
+  @include create-mq($breakpoint, 'min') {
+    @each $aut in $auto{
+      &x#{$modifier}-#{$auto}{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}
 
 @mixin create-margin($modifier, $spaces, $breakpoint) {
     @include create-mq($breakpoint, 'min') {
       @for $i from 0 through $spaces {
         @each $space-mods in $space-props{
+          @if($space-mods == '') {
+            &#{$space-mods}#{$modifier}-#{$i} {
+              margin-left: ($i) *.5rem;
+              margin-right: ($i) *.5rem;
+              margin-top: ($i) *.5rem;
+              margin-bottom: ($i) *.5rem;
+            }
+          }
           @if($space-mods == 'x') {
             &#{$space-mods}#{$modifier}-#{$i} {
               margin-left: ($i) *.5rem;
@@ -46,6 +80,14 @@ $space-props: (x, y, l, r, t, b);
     @include create-mq($breakpoint, 'min') {
       @for $i from 0 through $spaces {
         @each $space-mods in $space-props{
+          @if($space-mods == '') {
+            &#{$space-mods}#{$modifier}-#{$i} {
+              padding-left: ($i) *.5rem;
+              padding-right: ($i) *.5rem;
+              padding-top: ($i) *.5rem;
+              padding-bottom: ($i) *.5rem;
+            }
+          }
           @if($space-mods == 'x') {
             &#{$space-mods}#{$modifier}-#{$i} {
               padding-left: ($i) *.5rem;
@@ -93,5 +135,17 @@ $space-props: (x, y, l, r, t, b);
 .m{
   @each $modifier , $breakpoint in $map-grid-props {
   @include create-margin($modifier, $spaces, $breakpoint);
+  @include create-marginauto($modifier, $auto, $breakpoint);
 }
+}
+
+.d{
+  @each $modifier, $breakpoint in $map-grid-props{
+    @include create-display($modifier, $display-props, $breakpoint)
+  }
+}
+
+.img-fluid{
+  width: 100%;
+  height: auto;
 }

@@ -1,3 +1,159 @@
 body{
     background: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+// topbar
+
+.topbar{
+    width: 100%;
+    background: #20313b;
+    &__wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    input{
+        padding: .275rem .75rem;
+    }
+    &__right{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    &__icon{
+        font-size: .875rem;
+        margin: .5rem;
+        a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 1.275rem;
+            height: 1.275rem;
+            color: #fff;
+            transition: all .5s;
+            border-radius: 50%;
+            &:hover{
+                background: red;
+            }
+        }
+    }
+    .btn{
+        border-radius: 0;
+    }
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    &__vertical{
+        flex-direction: column;
+    }
+}
+
+.section{
+    &__title{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        color: $sec-color;
+    }
+}
+
+.card{
+    border: 1px solid $grey;
+    margin-bottom: .5rem;
+    &:nth-child(2){
+        margin-top: .5rem;
+    }
+    &__wrapper{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    &__media{
+        width: 20%;
+        
+    }
+    &__image{
+        padding-top: 56.25%;
+        display: block;
+        margin: 0;
+        background-color: #eee;
+        background-size: cover;
+        -moz-background-size: cover;
+        background-position: center;
+        img{
+            display: none;
+        }
+    }
+    &__content{
+        width: 69%; 
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+    &__infos{
+        font-size: .875rem;
+    }
+    &__vote{
+        width: 11%;
+        border-left: 1px solid $grey;
+        display: flex;
+        justify-content: center;
+    }
+    &__poster{
+        color: $darkgrey;
+        a{
+            color: $darkgrey;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    &__actions{
+        a{
+            color: $grey;
+        }
+        
+    }
+}
+
+.voter{
+    display: flex;
+    flex-direction: row;
+    &__wrapper{
+        text-align: center;
+    }
+    &__button{
+        border: 0;
+        color: $grey;
+        line-height: 1;
+        font-size: 2rem;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &__up{
+        &.active{
+            .voter__button{
+                color: $main-color;
+            }  
+        }
+        .voter__button{
+            &:hover{
+                color: $main-color;
+            }
+        }
+    }
+    &__down{
+        .voter__button{
+            &:hover{
+                color: $red;
+            }
+        }
+    }
+    &.voted{
+        .voter__sums{
+            color: $main-color;
+        }
+    }
 }

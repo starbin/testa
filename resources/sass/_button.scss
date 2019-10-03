@@ -1,0 +1,27 @@
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+    font-size: 1rem;
+    padding: .375rem .75rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    &-primary{
+        background: $main-color;
+        color: $white;
+        &:hover{
+            background: transparent;
+            color: $main-color;
+            border-color: $main-color;
+        }
+        &--noborder{
+            background: transparent;
+            color: $main-color;
+            &:hover{
+                color: $white;
+            }
+        }
+    }
+}
