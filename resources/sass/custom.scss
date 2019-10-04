@@ -86,6 +86,15 @@ body{
             display: none;
         }
     }
+    &__title{
+        margin-bottom: .375rem;
+        a{
+            color: $dark;
+            &:hover{
+                color: $dark;
+            }
+        }
+    }
     &__content{
         width: 69%; 
         padding-left: .5rem;
@@ -93,6 +102,7 @@ body{
     }
     &__infos{
         font-size: .875rem;
+        margin-bottom: .375rem;
     }
     &__vote{
         width: 11%;
@@ -101,19 +111,26 @@ body{
         justify-content: center;
     }
     &__poster{
-        color: $darkgrey;
+        color: $grey;
         a{
-            color: $darkgrey;
+            color: $grey;
             &:hover{
                 text-decoration: underline;
             }
         }
     }
-    &__actions{
-        a{
+    &__action{
+        margin-bottom: 1rem;
+        &button{
+            margin-right: 1rem;
             color: $grey;
+            &:hover{
+                color: $darkgrey;
+            }
         }
-        
+        &icon{
+            margin-right: .275rem;
+        }
     }
 }
 
